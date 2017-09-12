@@ -1,0 +1,31 @@
+body {
+	font-family: $brand-font, serif;
+	color: red;
+}
+
+.rml-header {
+	height: 76px;
+	border-bottom: 4px solid black;
+	min-width: 100%;
+	position: fixed;
+	z-index: 3;
+	text-align: center;
+	background-color: #ffffff;
+	padding: 0.5em;
+	h1 {
+		span {
+			display: none;
+		}
+	}
+	.logo {
+		height: 56px;
+	}
+}
+
+main {
+	margin-top: 80px;
+	padding-top: 1.5em;
+	padding-left: 2em;
+	padding-right: 2em;
+	float: left;
+}

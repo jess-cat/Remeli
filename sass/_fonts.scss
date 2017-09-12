@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'europabold';
+    src: url('../fonts/europabold-webfont.woff2') format('woff2'),
+         url('./fonts/europabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'europabolditalic';
+    src: url('../fonts/europabolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/europabolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'europalight';
+    src: url('../fonts/europalight-webfont.woff2') format('woff2'),
+         url('../fonts/europalight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'europalightitalic';
+    src: url('../fonts/europalightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/europalightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'europaregular';
+    src: url('../fonts/europaregular-webfont.woff2') format('woff2'),
+         url('../fonts/europaregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'europaregularitalic';
+    src: url('../fonts/europaregularitalic-webfont.woff2') format('woff2'),
+         url('../fonts/europaregularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$brand-font:'europaregular', 'helvetica', sans-serif;
+$brand-font-light: 'europalight', 'helvetica', sans-serif;
+$brand-font-bold: 'europabold', 'helvetica', sans-serif;

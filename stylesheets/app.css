@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'europabold';
+  src: url("../fonts/europabold-webfont.woff2") format("woff2"), url("./fonts/europabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'europabolditalic';
+  src: url("../fonts/europabolditalic-webfont.woff2") format("woff2"), url("../fonts/europabolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'europalight';
+  src: url("../fonts/europalight-webfont.woff2") format("woff2"), url("../fonts/europalight-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'europalightitalic';
+  src: url("../fonts/europalightitalic-webfont.woff2") format("woff2"), url("../fonts/europalightitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'europaregular';
+  src: url("../fonts/europaregular-webfont.woff2") format("woff2"), url("../fonts/europaregular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'europaregularitalic';
+  src: url("../fonts/europaregularitalic-webfont.woff2") format("woff2"), url("../fonts/europaregularitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 1, ../sass/_common.scss */
+body {
+  font-family: "europaregular", "helvetica", sans-serif, serif;
+  color: red;
+}
+
+/* line 6, ../sass/_common.scss */
+.rml-header {
+  height: 76px;
+  border-bottom: 4px solid black;
+  min-width: 100%;
+  position: fixed;
+  z-index: 3;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 0.5em;
+}
+/* line 16, ../sass/_common.scss */
+.rml-header h1 span {
+  display: none;
+}
+/* line 20, ../sass/_common.scss */
+.rml-header .logo {
+  height: 56px;
+}
+
+/* line 25, ../sass/_common.scss */
+main {
+  margin-top: 80px;
+  padding-top: 1.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  float: left;
+}
