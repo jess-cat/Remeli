@@ -20,6 +20,7 @@
   		<h1>Site Map</h1>
   		<br>
   		<h2>Page List</h2>
+  		<br>
   		<h3>Initial</h3>
 		  	<ul>
 		  		<li>Landing Page
@@ -37,6 +38,11 @@
 		  		<li>Recipes
 		  			<ul>
 		  				<li>My Recipes</li>
+		  					<ul>
+		  						<li>Recipe list</li>
+		  						<li>New recipe</li>
+		  						<li>Edit recipe</li>
+		  					</ul>
 		  				<li>Recipe Home
 		  					<ul>
 		  						<li>Recipe Ingredients</li>
@@ -50,6 +56,11 @@
 		  				<li>Today (home)</li>
 		  				<li>Full Calendar</li>
 		  				<li>Saved Menus</li>
+		  					<ul>
+		  						<li>Menu list</li>
+		  						<li>New menu</li>
+		  						<li>Edit menu</li>
+		  					</ul>
 		  			</ul>
 		  		</li>
 		  		<li>Inspiration
@@ -65,25 +76,329 @@
 			<ul>
 				<li>Team Page</li>
 				<li>User Page</li>
+				<li>Search Results</li>
 			</ul>
 		<br>
 		<br>
-		<h2>Actions</h2>
+		<h2>Interaction</h2>
+		<br>
+		<h3>Landing Page</h3>
+			<ul>
+				<li>Static Content</li>
+				<li><code>button</code>: Login</li>
+				<li><code>button</code>: Sign Up</li>
+			</ul>
 		<h3>Landing Page: Login</h3>
+			<ul>
+				<li>Static Content</li>
+				<li><code>input</code>: Login User</li>
+				<li><code>input</code>: Password</li>
+				<li><code>button</code>: Submit</li>
+			</ul>
 		<h3>Landing Page: Sign Up</h3>
-		<h3>Profile Page</h3>
-		<h3>Notifications</h3>
+			<ul>
+				<li>Static Content</li>
+				<li><code>input</code>: User Login</li>
+				<li><code>input</code>: Password</li>
+				<li><code>input</code>: Confirm Password</li>
+				<li><code>input</code>: Name</li>
+				<li><code>input</code>: Email</li>
+				<li><code>button</code>: Submit</li>
+			</ul>
+		<h3>Common</h3>
+			<ul>
+				<li>Header
+					<ul>
+						<li><code>search</code>: Recipes, Menus, Users, Tags</li>
+						<li><code>link</code>: Image Logo (-> Home)</li>
+						<li><code>link</code>: Image User (-> My Profile Page)</li>
+						<li><code>link</code>: User Name (-> My Profile Page)</li>
+						<li><code>link</code>: Notifications (-> Notifications)</li>
+					</ul>
+				</li>
+				<li>Navigation
+					<ul>
+						<li><code>link</code>: Recipes (-> Recipes: My Recipes)</li>
+						<li><code>link</code>: Calendar (-> Calendar: Today</li>
+						<li><code>link</code>: Inspiration (-> Inspiration: Discover)</li>
+						<li><code>link</code>: My List (-> Shopping List)</li>
+					</ul>
+				</li>
+			</ul>
+		<h3>My Profile Page</h3>
+			<ul>
+				<li>Image <code>button</code>: edit</li>
+				<li>Name</li>
+				<li>Description</li>
+				<li><code>button</code>: edit info</li>
+				<li>Followers</li>
+				<li>Following</li>
+			</ul>
+		<h3>My Profile Page: Edit</h3>
+			<ul>
+				<li>Image <code>input</code>: submit file</li>
+				<li><code>input</code>:Name</li>
+				<li><code>input</code>: </li>
+				<li><code>button</code>: save</li>
+			</ul>
+		<h3>My Profile: Followers</h3>
+			<ul>
+				<li>Each List Unit: Followers
+					<ul>
+						<li>Image</li>
+						<li>Name</li>
+						<li><code>link</code>: User Profile</li>
+						<li><code>button</code>: Edit (block)</li>
+					</ul>
+				</li>	
+			</ul>
+		<h3>My Profile: Following</h3>
+			<ul>
+				<li>Each List Unit: Following
+					<ul>
+						<li>Image</li>
+						<li>Name</li>
+						<li><code>link</code>: User Profile</li>
+						<li><code>button</code>: Unfollow</li>
+					</ul>
+				</li>	
+				<li>Find More Contacts
+					<ul>
+						<li><code>button</code>: Invite Facebook</li>
+						<li><code>button</code>: Invite Instagram</li>
+						<li><code>button</code>: Invite Twitter</li>
+					</ul>
+				</li>	
+			</ul>			
+		<h3>Notifications (see types of notification below)</h3>
+			<ul>
+				<li>Each List Unit:
+					<ul>
+						<li><code>color</code>: status (new/read)</li>
+						<li>Notification text</li>
+						<li><code>link</code>: go to notification</li>
+					</ul>
+				</li>
+			</ul>
 		<h3>Recipes: My Recipes</h3>
+			<ul>
+				<li>Each List Unit:
+					<ul>
+						<li><code>link</code>: Author Image (-> Author Page)</li>
+						<li><code>link</code>: Author Name (-> Author Page)</li>
+						<li>Image: Recipe Cover</li>
+						<li>Title</li>
+						<li>Description</li>
+						<li>Rating: Complexity</li>
+						<li>Rating: Preparation Time</li>
+						<li>Rating: Portions</li>
+						<li>Rating: Stars</li>
+						<li><code>button</code>: save to bookmarks/ status: saved</li>
+						<li><code>button</code>: share to facebook</li>
+						<li><code>button</code>: share to instagram</li>
+						<li><code>button</code>: save to pinterest</li>
+						<li><code>link</code>: see full recipe</li>
+					</ul>
+				</li>
+				<li><code>button</code>: Add or Import New Recipe (-> Recipes: New Recipe)</li>
+				<li><code>button</code>: Find More Recipes (-> Inspiration: Discovery)</li>
+				<li><code>search</code>: Find Recipe by tag, title or author</li>
+			</ul>
 		<h3>Recipes: Recipe Ingredients</h3>
+			<ul>
+				<li><code>link</code>: Author Image (-> Author Page)</li>
+				<li><code>link</code>: Author Name (-> Author Page)</li>
+				<li>Rating: Complexity</li>
+				<li>Rating: Preparation Time</li>
+				<li>Rating: Portions</li>
+				<li>Rating: Stars</li>
+				<li><code>button</code>: Rate</li>
+				<li><code>button</code>: save to bookmarks</li>
+				<li><code>video</code>: plays recipe tutorial (optional)</li>
+				<li>Title</li>
+				<li>Description</li>			
+				<li>Image: Recipe Cover</li>
+				<li>Image: up to 3 complementary images (optional)</li>
+				<li>Ingredient List</li>
+				<li><code>link</code>: Preparation (-> Recipe Preparation)</li>
+			</ul>
 		<h3>Recipes: Recipe Preparation</h3>
+			<ul>
+				<li><code>link</code>: Author Image (-> Author Page)</li>
+				<li><code>link</code>: Author Name (-> Author Page)</li>
+				<li>Rating: Complexity</li>
+				<li>Rating: Preparation Time</li>
+				<li>Rating: Portions</li>
+				<li>Rating: Stars</li>
+				<li><code>button</code>: Rate</li>
+				<li><code>button</code>: save to bookmarks</li>
+				<li><code>video</code>: plays recipe tutorial (optional)</li>
+				<li>Title</li>
+				<li>Description</li>
+				<li>Image: Recipe Cover</li>
+				<li>Image: up to 3 complementary images (optional)</li>
+				<li>Recipe Preparation</li>
+				<li><code>link</code>: Preparation (-> Recipe Preparation)</li>
+			</ul>		
+		<h3>Recipes: Edit recipe</h3>
+			<ul>
+				<li>Warning: the recipe will be saved as a copy in your recipes</li>
+				<li><code>input</code>: Author Image (-> Author Page) + User Image (disabled)</li>
+				<li><code>link</code>: Author Name (-> Author Page) + User Name (disabled)</li>
+				<li><code>input</code>: Complexity</li>
+				<li><code>input</code> Preparation Time</li>
+				<li><code>input</code>Rating: Portions</li>
+				<li>Rating: Stars / disabled (the copy counts as new recipe)</li>
+				<li><code>input</code>: Title (modified by User Name)</li>
+				<li><code>input</code>: Video - delete existing file</li>
+				<li><code>input</code>: Video - submit file (optional)</li>
+				<li><code>input</code>: Image - delete existing files</li>
+				<li><code>input</code>: Image - submit files (optional)</li>
+				<li><code>input</code>: Description</li>
+				<li><code>input</code>: Recipe Preparation</li>
+				<li><code>button</code>: save</li>
+				<li><code>button</code>: save draft</li>
+			</ul>
+		<h3>Recipes: New Recipe</h3>
+			<ul>
+				<li><code>link</code>: Drafts (Recipes: Drafs)</li>
+				<li>Create via link
+					<ul>
+						<li><code>input</code>: recipe link</li>
+						<li><code>button</code>: import (-> Recipes: Edit recipe [with imported info])</li>
+					</ul>
+				</li>
+				<li>Create from scratch
+					<ul>
+						<li><code>input</code>: recipe title</li>
+						<li><code>input</code>: recipe description</li>
+						<li><code>button</code>: create new (-> Recipes: Edit Recipe [blank])</li>
+					</ul>
+				</li>
+			</ul>
+		<h3>Recipes: Drafts</h3>
+			<ul>
+				<li>Each List Unit
+					<ul>
+						<li>Image/placeholder</li>
+						<li>Title</li>
+						<li>Description Preview</li>
+						<li>Author</li>
+						<li>Last Edit</li>
+						<li><code>button</code>: edit (-> Recipes: Edit Recipe)</li>
+						<li><code>button</code>: delete</li>
+					</ul>
+				</li>
+			</ul>
 		<h3>Menu Calendar: Today</h3>
+			<ul>
+				<li><code>link</code>: Current Menu Title (-> Menu Calendar: Current Menu)</li>
+				<li><code>link</code>: Current Menu Author (-> Author Page)</li>
+				<li><code>link</code>: Current Menu Author Image (-> Author Page)</li>
+				<li>Rating: Complexity</li>
+				<li>Rating: Duration</li>
+				<li>Rating: Number of Recipes</li>
+				<li>Rating: Stars</li>
+				<li><code>button</code>: Rate</li>
+				<li><code>button</code>: save to bookmarks / status: saved</li>
+				<li><code>button</code>: share to facebook</li>
+				<li><code>button</code>: share to instagram</li>
+				<li><code>button</code>: save to pinterest</li>
+				<li>Current Menu Image</li>
+				<li>Sub Navigation
+					<ul>
+						<li>Today</li>
+						<li><code>link</code>: Calendar (-> Menu Calendar: Current Menu)</li>
+						<li><code>link</code>: Calendar (-> Menu Calendar: Saved Menus)</li>
+					</ul>
+				</li>
+				<li>Sub Navigation
+					<ul>
+						<li><code>button</code>: previous day (updates content to previous day's)</li>
+						<li>Current Date</li>
+						<li><code>button</code>: next day (updates content to next day's)</li>
+					</ul>
+				</li>
+				<li>Past Meals
+					<ul>Each List Unit / Meal Name
+						<li><code>link</code>: recipe thumbnail (-> recipe page)</li>
+						<li><code>link</code>: recipe title (-> recipe page)</li>
+						<li><code>button</code>: rate: stars</li>
+					</ul>
+				</li>
+				<li>Current Meal: Meal Name
+					<li>Each List Unit
+						<ul>
+							<li><code>link</code>: recipe cover (-> recipe page)</li>
+							<li><code>link</code>: recipe title (-> recipe page)</li>
+							<li>Recipe Description</li>
+							<li>Rating: Complexity</li>
+							<li>Rating: Preparation Time</li>
+							<li>Rating: Number of Recipes</li>
+							<li>Rating: Stars</li>
+							<li><code>button</code>: save to bookmarks / status: saved</li>
+							<li><code>button</code>: share to facebook</li>
+							<li><code>button</code>: share to instagram</li>
+							<li><code>button</code>: save to pinterest</li>
+						</ul>
+					</li>
+				</li>
+				<li>Next Meals
+					<ul>Each List Unit / Meal Name
+						<li><code>link</code>: recipe thumbnail (-> recipe page)</li>
+						<li><code>link</code>: recipe title (-> recipe page)</li>
+						<li>Rating: Preparation Time</li>
+					</ul>
+				</li>
+			</ul>
 		<h3>Menu Calendar: Full Calendar</h3>
 		<h3>Menu Calendar: Saved Menus</h3>
+		<h3>Menu Calendar: New Menu</h3>
+		<h3>Menu Calendar: Edit Menu</h3>
 		<h3>Inspiration: Discover</h3>
 		<h3>Inspiration: Following</h3>
 		<h3>Shopping List</h3>
-		<h3>Team Page</h3>
-		<h3>User Page</h3>
+		<h3>Team Feed</h3>
+		<h3>User Feed</h3>
+		<h3>Search Results</h3>
+		<br>
+		<br>
+		<h2>User Flow</h2>
+		<br>
+		<h3>Sign Up and First Visit</h3>
+		<h3>Sign In, Recurrent User</h3>
+		<h3>Browse and interact with menus</h3>
+		<h3>Browse and interact with recipes</h3>
+		<h3>Set a menu as Current Menu</h3>
+		<h3>Edit Menu</h3>
+		<h3>Edit Recipe</h3>
+		<h3>Shopping list</h3>
+		<h3>Manage my content (followers/following)</h3>
+		<h3>Create new recipe</h3>
+		<h3>Import new recipe</h3>
+		<h3>Create new menu</h3>
+		<br>
+		<br>
+		<h2>Notifications</h2>
+		<br>
+		<br>
+		<h2>Icons</h2>
+		<br>
+		<br>
+		<h2>Images</h2>
+		<h3>System</h3>
+			<ul>
+				<li>Logo</li>
+				<li>Responsive Logo (optional)</li>
+				<li>Favicon</li>
+			</ul>
+		<h3>Placeholders</h3>
+			<ul>
+				<li>User Image</li>
+				<li>Recipe Image</li>
+				<li>Menu Image</li>
+				<li>Team Image</li>
+			</ul>
 	</main>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>

@@ -1,0 +1,27 @@
+// Brand Colors
+$brand-light: #E3EAA5;
+$brand-main: #88B04B;
+$brand-dark: #476A30;
+
+$neutral: #A1A3A3;
+$neutral-light: #ECF0EF;
+$neutral-lighter: #FBFFFE;
+$neutral-dark: #838487;
+$neutral-darker: #67686A;
+//Interactive Colors
+$interactive-blue: #58C9D4;
+$interactive-blue-dark: #0061A3;
+$brand-accent: #F45520;
+$brand-accent-dark: #B91228;
+$brand-accent-darker: #7D2027;
+$brand-faded: #ce8477;
+//Bases
+$black: black;
+$white: white;
+
+//Typography
+.rml-primary-text-color {color: $neutral;}
+.rml-secondary-text-color {color: $neutral-darker;}
+
+//Elements
+.rml-divider-color {color: $neutral-light;}

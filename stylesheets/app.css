@@ -34,13 +34,38 @@
   font-weight: normal;
   font-style: normal;
 }
+/* line 23, ../sass/_colors.scss */
+.rml-primary-text-color {
+  color: #A1A3A3;
+}
+
+/* line 24, ../sass/_colors.scss */
+.rml-secondary-text-color {
+  color: #67686A;
+}
+
+/* line 27, ../sass/_colors.scss */
+.rml-divider-color {
+  color: #ECF0EF;
+}
+
 /* line 1, ../sass/_common.scss */
 body {
   font-family: "europaregular", "helvetica", sans-serif, serif;
-  color: red;
+  color: #838487;
 }
 
 /* line 6, ../sass/_common.scss */
+h1, h2, h3 {
+  color: black;
+}
+
+/* line 10, ../sass/_common.scss */
+h2 {
+  color: #88B04B;
+}
+
+/* line 14, ../sass/_common.scss */
 .rml-header {
   height: 76px;
   border-bottom: 4px solid black;
@@ -51,16 +76,16 @@ body {
   background-color: #ffffff;
   padding: 0.5em;
 }
-/* line 16, ../sass/_common.scss */
+/* line 24, ../sass/_common.scss */
 .rml-header h1 span {
   display: none;
 }
-/* line 20, ../sass/_common.scss */
+/* line 28, ../sass/_common.scss */
 .rml-header .logo {
   height: 56px;
 }
 
-/* line 25, ../sass/_common.scss */
+/* line 33, ../sass/_common.scss */
 main {
   margin-top: 80px;
   padding-top: 1.5em;

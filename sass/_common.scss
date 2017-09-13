@@ -1,6 +1,14 @@
 body {
 	font-family: $brand-font, serif;
-	color: red;
+	color: $neutral-dark;
+}
+
+h1, h2, h3 {
+	color: $black;
+}
+
+h2 {
+	color: $brand-main;
 }
 
 .rml-header {
