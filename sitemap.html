@@ -54,8 +54,8 @@
 		  		<li>Menu Calendar
 		  			<ul>
 		  				<li>Today (home)</li>
-		  				<li>Full Calendar</li>
-		  				<li>Saved Menus</li>
+		  				<li>Week</li>
+		  				<li>All Menus</li>
 		  					<ul>
 		  						<li>Menu list</li>
 		  						<li>New menu</li>
@@ -221,6 +221,7 @@
 				<li>Image: up to 3 complementary images (optional)</li>
 				<li>Ingredient List</li>
 				<li><code>link</code>: Preparation (-> Recipe Preparation)</li>
+				<li><code>button</code>: copy and edit recipe (-> Recipes: Edit Recipe)</li>
 			</ul>
 		<h3>Recipes: Recipe Preparation</h3>
 			<ul>
@@ -239,12 +240,13 @@
 				<li>Image: up to 3 complementary images (optional)</li>
 				<li>Recipe Preparation</li>
 				<li><code>link</code>: Preparation (-> Recipe Preparation)</li>
+				<li><code>button</code>: copy and edit recipe (-> Recipes: Edit Recipe)</li>
 			</ul>		
 		<h3>Recipes: Edit recipe</h3>
 			<ul>
 				<li>Warning: the recipe will be saved as a copy in your recipes</li>
-				<li><code>input</code>: Author Image (-> Author Page) + User Image (disabled)</li>
-				<li><code>link</code>: Author Name (-> Author Page) + User Name (disabled)</li>
+				<li>Author Image (-> Author Page) (modified by) User Image</li>
+				<li>Author Name (-> Author Page) (modified by) User Name</li>
 				<li><code>input</code>: Complexity</li>
 				<li><code>input</code> Preparation Time</li>
 				<li><code>input</code>Rating: Portions</li>
@@ -255,7 +257,49 @@
 				<li><code>input</code>: Image - delete existing files</li>
 				<li><code>input</code>: Image - submit files (optional)</li>
 				<li><code>input</code>: Description</li>
-				<li><code>input</code>: Recipe Preparation</li>
+				<li>Recipe Preparation
+					<ul>
+						<li><code>input</code>: Stage Title (optional)
+							<ul>
+								<li>Each Step Unit: Step #
+									<ul>
+										<li><code>input</code>: description of step</li>
+										<li><code>button</code>: add step</li>
+									</ul>
+								</li>
+								<li><code>button</code>: Add another step (optional)</li>
+							</ul>
+						</li>
+						<li><code>button</code>: Add another stage (optional)</li>
+					</ul>
+				</li>
+				<li>Recipe Ingredients
+					<ul>
+						<li>Each Ingredient Unit
+							<ul>
+								<li><code>input</code>: Quantity</li>
+								<li><code>input</code>: Measurement Unit</li>
+								<li><code>input</code>: Name of ingredient</li>
+								<li><code>auto complete suggestion</code>: 
+									<ul>
+										<li>Confirmation: we found this ingredient in our database. Is it correct?</li>
+										<li>Ingredient Picture</li>
+										<li>(Quantity) (un) of (name of ingredient)</li>
+										<li><code>button</code>: yes / confirm ingredient</li>
+									</ul>
+								</li>
+								<li><code>button</code>: create new ingredient (in case didn't match autocomplete)
+									<ul>
+										<li>Would you like to add a picture to the new ingredient? (optional)
+										</li>
+										<li><code>input</code>: yes / submit file</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><code>button</code>: add new ingredient</li>
+					</ul>
+				</li>
 				<li><code>button</code>: save</li>
 				<li><code>button</code>: save draft</li>
 			</ul>
@@ -308,8 +352,8 @@
 				<li>Sub Navigation
 					<ul>
 						<li>Today</li>
-						<li><code>link</code>: Calendar (-> Menu Calendar: Current Menu)</li>
-						<li><code>link</code>: Calendar (-> Menu Calendar: Saved Menus)</li>
+						<li><code>link</code>: Week (-> Menu Calendar: Week)</li>
+						<li><code>link</code>: All Menus (-> Menu Calendar: All Menus)</li>
 					</ul>
 				</li>
 				<li>Sub Navigation
@@ -351,16 +395,466 @@
 					</ul>
 				</li>
 			</ul>
-		<h3>Menu Calendar: Full Calendar</h3>
-		<h3>Menu Calendar: Saved Menus</h3>
-		<h3>Menu Calendar: New Menu</h3>
+		<h3>Menu Calendar: Week</h3>
+			<ul>
+				<li><code>link</code>: Current Menu Title (-> Menu Calendar: Current Menu)</li>
+				<li><code>link</code>: Current Menu Author (-> Author Page)</li>
+				<li><code>link</code>: Current Menu Author Image (-> Author Page)</li>
+				<li>Rating: Complexity</li>
+				<li>Rating: Duration</li>
+				<li>Rating: Number of Recipes</li>
+				<li>Rating: Stars</li>
+				<li><code>button</code>: Rate</li>
+				<li><code>button</code>: save to bookmarks / status: saved</li>
+				<li><code>button</code>: share to facebook</li>
+				<li><code>button</code>: share to instagram</li>
+				<li><code>button</code>: save to pinterest</li>
+				<li>Current Menu Image</li>
+				<li>Sub Navigation
+					<ul>
+						<li><code>link</code>: Today (-> Menu Calendar: Today)</li>
+						<li>Week</li>
+						<li><code>link</code>: All Menus (-> Menu Calendar: All Menus)</li>
+					</ul>
+				</li>
+				<li>Sub Navigation
+					<ul>
+						<li><code>button</code>: previous week (updates content to previous week's)</li>
+						<li>Current Date</li>
+						<li><code>button</code>: next week (updates content to next week's)</li>
+					</ul>
+				</li>
+				<li>Past Meals
+					<ul>Each List Unit / Meal Name
+						<li><code>link</code>: recipe thumbnail (-> recipe page)</li>
+						<li><code>link</code>: recipe title (-> recipe page)</li>
+						<li><code>button</code>: rate: stars</li>
+					</ul>
+				</li>
+				<li>Each WeekDay Unit: Weekday + Date
+					<ul>Each List Unit / Meal Name
+						<li><code>link</code>: recipe thumbnail (-> recipe page)</li>
+						<li><code>link</code>: recipe title (-> recipe page)</li>
+					</ul>
+				</li>
+			</ul>
+		<h3>Menu Calendar: All Menus</h3>
+			<ul>
+				<li>All Menus</li>
+				<li>Filter
+					<ul>
+						<li><code>checkbox</code>: Tested Menus / default status: checked</li>
+						<li><code>checkbox</code>: Menus to Test / default status: checked</li>
+					</ul>
+				</li>
+				<li>Each List Unit: Bookmarks
+					<ul>
+						<li><code>link</code>: Author Image (-> Author Page)</li>
+						<li><code>link</code>: Author Name (-> Author Page)</li>
+						<li>Image: Menu Cover</li>
+						<li>Title</li>
+						<li>Description</li>
+						<li>Rating: Complexity</li>
+						<li>Rating: Number of Recipes</li>
+						<li>Rating: Duration</li>
+						<li>Rating: Stars</li>
+						<li><code>button</code>: remove from bookmarks</li>
+						<li><code>button</code>: share to facebook</li>
+						<li><code>button</code>: share to instagram</li>
+						<li><code>button</code>: save to pinterest</li>
+						<li><code>link</code>: see full menu</li>
+						<li><code>button</code>: add to calendar (-> Menu calendar: Manage Calendar)</li>
+					</ul>
+				</li>
+				<li>Each List Unit: Tested
+					<ul>
+						<li><code>link</code>: Author Image (-> Author Page)</li>
+						<li><code>link</code>: Author Name (-> Author Page)</li>
+						<li>Image: Menu Cover</li>
+						<li>Title</li>
+						<li>Description</li>
+						<li>Rating: Complexity</li>
+						<li>Rating: Number of Recipes</li>
+						<li>Rating: Duration</li>
+						<li>My Rating: Stars</li>
+						<li><code>button</code>: change rating: stars</li>
+						<li><code>button</code>: share to facebook</li>
+						<li><code>button</code>: share to instagram</li>
+						<li><code>button</code>: save to pinterest</li>
+						<li><code>link</code>: see full menu</li>
+						<li><code>button</code>: add to calendar / repeat menu (-> Menu calendar: Manage Calendar)</li>
+					</ul>
+				</li>
+				<li><code>button</code>: Create new Menu (-> Menu Calendar: New Menu)</li>
+			</ul>
+		<h3>Menu Page</h3>
+			<ul>
+				<li><code>link</code>: Menu Title (-> Menu Calendar: Current Menu)</li>
+				<li><code>link</code>: Menu Author (-> Author Page)</li>
+				<li><code>link</code>: Menu Author Image (-> Author Page)</li>
+				<li>Rating: Complexity</li>
+				<li>Rating: Duration</li>
+				<li>Rating: Number of Recipes</li>
+				<li>Rating: Stars</li>
+				<li><code>button</code>: Rate (only if tested)</li>
+				<li><code>button</code>: save to bookmarks</li>
+				<li><code>button</code>: share to facebook</li>
+				<li><code>button</code>: share to instagram</li>
+				<li><code>button</code>: save to pinterest</li>
+				<li>Menu Image</li>
+				<li>Menu Description</li>
+				<li>Each List Unit: Weekday + Date
+					<ul>Each List Unit / Meal Name
+						<li><code>link</code>: recipe thumbnail (-> recipe page)</li>
+						<li><code>link</code>: recipe title (-> recipe page)</li>
+					</ul>
+				</li>
+				<li><code>button</code>: add to calendar (-> Menu calendar: Manage Calendar)</li>
+				<li><code>button</code>: copy and edit menu (-> Menu Calendar: Edit Menu)</li>
+			</ul>
 		<h3>Menu Calendar: Edit Menu</h3>
+			<ul>
+				<li>Warning: the menu will be saved as a copy in your recipes</li>
+				<li>Author Image (-> Author Page) (modified by) User Image</li>
+				<li>Author Name (-> Author Page) (modified by) User Name</li>
+				<li><code>input</code>: Complexity</li>
+				<li><code>input</code> Preparation Time</li>
+				<li><code>sum</code>Rating: Number of Recipes</li>
+				<li>Rating: Stars / disabled (the copy counts as new menu)</li>
+				<li><code>input</code>: Title (modified by User Name)</li>
+				<li><code>input</code>: Menu Image (upload file)</li>
+				<li><code>input</code>: Menu Description</li>
+				<li>Each List Unit
+					<li>Weekday: <code>dropdown</code>: select first weekday to start menu
+						<ul>Each List Unit
+							<li><code>dropdown</code>: select meal</li>
+							<li><code>button</code>: select first recipe 
+								<ul>Modal: List of My Recipes
+									<li>Each List Unit
+										<ul>
+											<li>Recipe Image</li>
+											<li>Recipe Title</li>
+											<li>Recipe Description</li>
+											<li><code>link</code>: See full recipe (opens full recipe in modal with <code>link</code> to go back)</li>
+											<li><code>button</code>add recipe</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><code>button</code>: add another recipe</li>
+						</ul>
+					</li>
+				</li>
+				<li><code>button</code>: add another day</li>
+				<li><code>button</code>: save</li>
+				<li><code>button</code>: save draft</li>
+			</ul>		
+		<h3>Menu Calendar: New Menu</h3>
+			<ul>
+				<li>User Image</li>
+				<li>User Name</li>
+				<li><code>input</code>: Complexity</li>
+				<li><code>input</code> Preparation Time</li>
+				<li><code>sum</code>Rating: Number of Recipes</li>
+				<li>Rating: Stars / disabled (no data)</li>
+				<li><code>input</code>: Menu Title</li>
+				<li><code>input</code>: Menu Image (upload file)</li>
+				<li><code>input</code>: Menu Description</li>
+				<li>Each List Unit
+					<li>Weekday: <code>dropdown</code>: select first weekday to start menu
+						<ul>Each List Unit
+							<li><code>dropdown</code>: select meal</li>
+							<li><code>button</code>: select first recipe 
+								<ul>Modal: List of My Recipes
+									<li>Each List Unit
+										<ul>
+											<li>Recipe Image</li>
+											<li>Recipe Title</li>
+											<li>Recipe Description</li>
+											<li><code>link</code>: See full recipe (opens full recipe in modal with <code>link</code> to go back)</li>
+											<li><code>button</code>add recipe</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><code>button</code>: add another recipe</li>
+						</ul>
+					</li>
+				</li>
+				<li><code>button</code>: add another day</li>
+				<li><code>button</code>: save</li>
+				<li><code>button</code>: save draft</li>
+			</ul>				
+		<h3>Menu Calendar: Manage Calendar</h3>
+			<ul>
+				<li>Current Menu</li>
+				<li>Next Menus</li>
+				<li>Calendar
+					<ul>Each Calendar Unit (Day)
+						<li><code>menu</code>: yes
+							<ul>
+								<li><code>link</code>: Menu Page</li>
+								<li><code>button</code>: remove menu</li>
+							</ul>
+						</li>
+						<li><code>menu</code>: no
+							<ul>
+								<li><code>button</code>: add menu</li>
+							</ul>
+						</li>
+
+					</ul>
+				</li>
+				<li><code>button</code>: Add Menu (-> modal: Saved Menus List)
+					<ul>
+						<li>Each List Unit
+							<ul>
+								<li>Menu Image</li>
+								<li>Menu Author</li>
+								<li>Title</li>
+								<li>Description</li>
+								<li>Menu Duration</li>
+								<li>Number of Recipes</li>
+								<li><code>link</code>: Preview (-> opens menu preview)</li>
+								<li><code>button</code>: add menu
+									<ul>
+										<li><code>date picker</code>: select date to start menu</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
 		<h3>Inspiration: Discover</h3>
+			<ul>
+				<li>Sub Nav
+					<ul>
+						<li>Discover</li>
+						<li><code>link</code>: Following (-> Inspiration: Following)</li>
+					</ul>
+				</li>
+				<li>Filter
+					<ul>
+						<li><code>dropdown</code>
+							<ul>
+								<li>Only Recipes</li>
+								<li>Only Menus</li>
+								<li>Menus and Recipes</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Each Curated List
+					<ul>
+						<li>List Title</li>
+						<li>Each List Unit
+							<ul>
+								<li><code>link</code>: Menu Title (-> Menu Page)</li>
+								<li>Rating: Stars</li>
+								<li><code>button</code>: share on facebook</li>
+								<li><code>button</code>: share on instagram</li>
+								<li><code>button</code>: save to pinterest</li>
+								<li><code>link</code>: Menu Image (-> Menu Page)</li>
+								<li><code>button</code>: bookmark</li>
+								<li><code>link</code>: Author Image (-> Author Page)</li>
+								<li><code>link</code>: Author Name (-> Author Page)</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
 		<h3>Inspiration: Following</h3>
+			<ul>
+				<li>Sub Nav
+					<ul>
+						<li><code>link</code>: Discover (-> Inspiration: Discover)</li>
+						<li>Following</li>
+					</ul>
+				</li>
+				<li>Filter
+					<ul>
+						<li><code>dropdown</code>
+							<ul>
+								<li>Only Recipes</li>
+								<li>Only Menus</li>
+								<li>Menus and Recipes</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Each List Unit (menu)
+					<ul>
+						<li>Posted on <code>date</code></li>
+						<li><code>link</code>: Author Image (-> Author Page)</li>
+						<li><code>link</code>: Author Name (-> Author Page)</li>						
+						<li><code>link</code>: Menu Title (-> Menu Page)</li>
+						<li>Rating: Stars</li>
+						<li>Menu Icon</li>
+						<li>Rating: Complexity</li>
+						<li>Rating: Number of Recipes</li>
+						<li>Rating: Duration</li>
+						<li>Description</li>
+						<li><code>button</code>: share on facebook</li>
+						<li><code>button</code>: share on instagram</li>
+						<li><code>button</code>: save to pinterest</li>
+						<li><code>link</code>: Menu Image (-> Menu Page)</li>
+						<li><code>button</code>: bookmark</li>
+					</ul>
+				</li>
+				<li>Each List Unit (recipe)
+					<ul>
+						<li>Posted on <code>date</code></li>
+						<li><code>link</code>: Author Image (-> Author Page)</li>
+						<li><code>link</code>: Author Name (-> Author Page)</li>						
+						<li><code>link</code>: Recipe Title (-> Recipe Page)</li>
+						<li>Rating: Stars</li>
+						<li>Recipe Icon</li>
+						<li>Rating: Complexity</li>
+						<li>Rating: Portions</li>
+						<li>Rating: Prepatation Time</li>
+						<li>Description</li>
+						<li><code>button</code>: share on facebook</li>
+						<li><code>button</code>: share on instagram</li>
+						<li><code>button</code>: save to pinterest</li>
+						<li><code>link</code>: Recipe Image (-> Recipe Page)</li>
+						<li><code>button</code>: bookmark</li>
+					</ul>
+				</li>
+			</ul>
 		<h3>Shopping List</h3>
+			<ul>
+				<li>My List</li>
+				<li><code>link</code>: Current Menu (-> Menu Calendar: Current Menu)</li>
+				<li>Each list unit
+					<ul>
+						<li>Supermarket Area title
+							<ul>
+								<li><code>checkbox</code>: Quantity / Name of Ingredient / Ingredient Image</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><code>button</code>: Add item
+					<ul>
+						<li><code>input</code>: item name/description</li>
+						<li><code>button</code>: submit</li>
+					</ul>
+				</li>
+			</ul>
 		<h3>Team Feed</h3>
-		<h3>User Feed</h3>
+			<ul>
+				<li>Image: Team Cover</li>
+				<li>Image: Team Avatar</li>
+				<li>Team Name</li>
+				<li><code>link</code>: Number of followers (-> modal: followers)</li>
+				<li><code>button</code>: follow (unfollow)</li>
+				<li><code>dropdown</code>: Filter
+					<ul>
+						<li>Only Recipes</li>
+						<li>Only Menus</li>
+						<li>Recipes and Menus</li>
+					</ul>
+				</li>
+				<li>Feed: Each List Unit (recipe)
+					<ul>
+						<li>Author Image</li>
+						<li>Author Name</li>
+						<li>Posted on <code>date</code></li>
+						<li>Team quote on post</li>
+						<li><code>link</code>: Recipe Title (-> Recipe Page)</li>
+						<li>Rating: Stars</li>
+						<li>Recipe Icon</li>
+						<li>Rating: Complexity</li>
+						<li>Rating: Portions</li>
+						<li>Rating: Prepatation Time</li>
+						<li>Description</li>
+						<li><code>button</code>: share on facebook</li>
+						<li><code>button</code>: share on instagram</li>
+						<li><code>button</code>: save to pinterest</li>
+						<li><code>link</code>: Recipe Image (-> Recipe Page)</li>
+						<li><code>button</code>: bookmark</li>
+					</ul>
+				</li>
+				<li>Feed: Each List Unit (menu)
+					<ul>
+						<li>Author Image</li>
+						<li>Author Name</li>
+						<li>Posted on <code>date</code></li>
+						<li>Team quote on post</li>
+						<li><code>link</code>: Menu Title (-> Menu Page)</li>
+						<li>Rating: Stars</li>
+						<li>Menu Icon</li>
+						<li>Rating: Complexity</li>
+						<li>Rating: Duration</li>
+						<li>Rating: Number of Recipes</li>
+						<li>Description</li>
+						<li><code>button</code>: share on facebook</li>
+						<li><code>button</code>: share on instagram</li>
+						<li><code>button</code>: save to pinterest</li>
+						<li><code>link</code>: Menu Image (-> Menu Page)</li>
+						<li><code>button</code>: bookmark</li>
+					</ul>
+				</li>				
+			</ul>
 		<h3>Search Results</h3>
+			<ul>
+				<li><code>searchbar</code>: new search</li>
+				<li>You searched for...</li>
+				<li>Results
+					<li>Each List Unit (menu)
+						<ul>
+							<li>Posted on <code>date</code></li>
+							<li><code>link</code>: Author Image (-> Author Page)</li>
+							<li><code>link</code>: Author Name (-> Author Page)</li>						
+							<li><code>link</code>: Menu Title (-> Menu Page)</li>
+							<li>Rating: Stars</li>
+							<li>Menu Icon</li>
+							<li>Rating: Complexity</li>
+							<li>Rating: Number of Recipes</li>
+							<li>Rating: Duration</li>
+							<li>Description</li>
+							<li><code>button</code>: share on facebook</li>
+							<li><code>button</code>: share on instagram</li>
+							<li><code>button</code>: save to pinterest</li>
+							<li><code>link</code>: Menu Image (-> Menu Page)</li>
+							<li><code>button</code>: bookmark</li>
+						</ul>
+					</li>
+					<li>Each List Unit (recipe)
+						<ul>
+							<li>Posted on <code>date</code></li>
+							<li><code>link</code>: Author Image (-> Author Page)</li>
+							<li><code>link</code>: Author Name (-> Author Page)</li>						
+							<li><code>link</code>: Recipe Title (-> Recipe Page)</li>
+							<li>Rating: Stars</li>
+							<li>Recipe Icon</li>
+							<li>Rating: Complexity</li>
+							<li>Rating: Portions</li>
+							<li>Rating: Prepatation Time</li>
+							<li>Description</li>
+							<li><code>button</code>: share on facebook</li>
+							<li><code>button</code>: share on instagram</li>
+							<li><code>button</code>: save to pinterest</li>
+							<li><code>link</code>: Recipe Image (-> Recipe Page)</li>
+							<li><code>button</code>: bookmark</li>
+						</ul>
+					</li>
+					<li>Each List Unit (user/team)
+						<ul>
+							<li><code>link</code>: Name (-> user/team page)</li>
+							<li><code>link</code>: Avatar (-> user/team page)</li>
+							<li>Followers</li>
+							<li><code>button</code>: follow (/unfollow)</li>
+						</ul>
+					</li>
+				</li>
+			</ul>
+		<h3>Modal (in: Menu Calendar: Edit Menu): My Recipes List</h3>
+		<h3>Modal (in: Menu Calendar: Edit Menu): Recipe Summary</h3>
+		<h3>Modal (in: Menu Calendar: Manage Calendar): My Menus List</h3>
+		<h3>Modal (in: Menu Calendar: Manage Calendar): Menu Preview</h3>
+		<h3>Modal (in: Team Page): List of Followers</h3>
 		<br>
 		<br>
 		<h2>User Flow</h2>
