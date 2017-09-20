@@ -1,0 +1,36 @@
+nav.rml-main-nav {
+	height: 100%;
+	min-height: 100%;
+	position: fixed;
+	border-right: 1px solid $neutral-light;
+	display: block;
+}
+.rml-main-nav {
+	width: 93px;
+	margin-top: 76px;
+	font-family: $brand-font;
+	font-size: 0.8em;
+	a {
+		height: 93px;
+		max-height: 93px;
+		text-align: center;
+		border-bottom: 1px solid $neutral-light;
+		width: 88%;
+		margin-left: 6%;
+		padding: 1rem;
+		color: $neutral;		
+	}
+	a:hover {
+		color: $brand-dark;
+		border-bottom: 4px solid $brand-dark;
+	}
+	.rml-icon {
+		width: 100%;
+		font-size: 1.8em;
+	}
+	.nav-link.active {
+		color: $black;
+		border-bottom: 4px solid $brand-main;
+		cursor: default;
+	}
+}

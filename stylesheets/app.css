@@ -1096,7 +1096,7 @@ h1, h2, h3 {
 
 /* line 9, ../sass/_typography.scss */
 h2 {
-  color: #88B04B;
+  color: #84BD00;
 }
 
 /* line 13, ../sass/_typography.scss */
@@ -1105,41 +1105,138 @@ h2 {
   color: #A1A3A3;
 }
 
+/* line 1, ../sass/_header.scss */
+.rml-header {
+  border-bottom: 4px solid black;
+  height: 76px;
+  padding-right: 0;
+  background-color: #ffffff;
+}
+/* line 6, ../sass/_header.scss */
+.rml-header .rml-user-avatar {
+  max-height: 32px;
+  width: 32px;
+}
+/* line 10, ../sass/_header.scss */
+.rml-header .rml-icon {
+  font-family: 'dripicons-v2';
+  color: #84BD00;
+  font-size: 1.5em;
+  border-left: 2px solid #ECF0EF;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+/* line 18, ../sass/_header.scss */
+.rml-header .rml-icon:hover {
+  color: #649135;
+  cursor: pointer;
+}
+/* line 22, ../sass/_header.scss */
+.rml-header .rml-user-menu {
+  text-align: right;
+}
+/* line 25, ../sass/_header.scss */
+.rml-header .logo {
+  height: 48px;
+}
+/* line 28, ../sass/_header.scss */
+.rml-header img {
+  vertical-align: text-bottom;
+  margin-right: 0.8em;
+  opacity: 0.6;
+}
+/* line 33, ../sass/_header.scss */
+.rml-header img:hover {
+  opacity: 1;
+}
+/* line 36, ../sass/_header.scss */
+.rml-header a:hover {
+  text-decoration: none;
+}
+
+/* line 1, ../sass/_main-nav.scss */
+nav.rml-main-nav {
+  height: 100%;
+  min-height: 100%;
+  position: fixed;
+  border-right: 1px solid #ECF0EF;
+  display: block;
+}
+
+/* line 8, ../sass/_main-nav.scss */
+.rml-main-nav {
+  width: 93px;
+  margin-top: 76px;
+  font-family: "europaregular", "helvetica", sans-serif;
+  font-size: 0.8em;
+}
+/* line 13, ../sass/_main-nav.scss */
+.rml-main-nav a {
+  height: 93px;
+  max-height: 93px;
+  text-align: center;
+  border-bottom: 1px solid #ECF0EF;
+  width: 88%;
+  margin-left: 6%;
+  padding: 1rem;
+  color: #A1A3A3;
+}
+/* line 23, ../sass/_main-nav.scss */
+.rml-main-nav a:hover {
+  color: #649135;
+  border-bottom: 4px solid #649135;
+}
+/* line 27, ../sass/_main-nav.scss */
+.rml-main-nav .rml-icon {
+  width: 100%;
+  font-size: 1.8em;
+}
+/* line 31, ../sass/_main-nav.scss */
+.rml-main-nav .nav-link.active {
+  color: black;
+  border-bottom: 4px solid #84BD00;
+  cursor: default;
+}
+
 /* line 1, ../sass/_common.scss */
 body {
   font-family: "europaregular", "helvetica", sans-serif, serif;
   color: #838487;
 }
 
-/* line 6, ../sass/_common.scss */
-.rml-header {
-  display: inline-block;
-  height: 76px;
-  border-bottom: 4px solid black;
-  background-color: #ffffff;
-  padding: 0.5em;
-}
-/* line 12, ../sass/_common.scss */
-.rml-header .logo {
-  height: 56px;
-}
-
-/* line 17, ../sass/_common.scss */
+/* line 5, ../sass/_common.scss */
 main {
-  margin-top: 80px;
-  padding-top: 1.5em;
-  padding-left: 2em;
-  padding-right: 2em;
+  margin-top: 76px;
+  margin-left: 93px;
+  float: right;
+  width: 100%;
+  display: inline-block;
+  position: fixed;
+}
+
+/* line 1, ../sass/_forms.scss */
+.rml-search {
+  font-family: 'europalight';
+}
+/* line 3, ../sass/_forms.scss */
+.rml-search .input-group {
+  height: 2em;
+}
+/* line 6, ../sass/_forms.scss */
+.rml-search .input-group-addon {
+  color: #A1A3A3;
+  background-color: white;
+  padding: .5rem;
+}
+/* line 11, ../sass/_forms.scss */
+.rml-search .form-control {
+  font-size: 0.9em;
+}
+
+/* line 1, ../sass/_elements.scss */
+.rml-image-header {
+  min-width: 100%;
+  height: 180px;
+  background-color: #84BD00;
   float: left;
-}
-
-/* line 25, ../sass/_common.scss */
-.rml-user-avatar {
-  max-height: 36px;
-  width: 36px;
-}
-
-/* line 30, ../sass/_common.scss */
-.rml-icon {
-  font-family: 'dripicons-v2';
 }

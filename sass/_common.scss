@@ -2,31 +2,11 @@ body {
 	font-family: $brand-font, serif;
 	color: $neutral-dark;
 }
-
-.rml-header {
-	display: inline-block;
-	height: 76px;
-	border-bottom: 4px solid black;
-	background-color: #ffffff;
-	padding: 0.5em;
-	.logo {
-		height: 56px;
-	}
-}
-
 main {
-	margin-top: 80px;
-	padding-top: 1.5em;
-	padding-left: 2em;
-	padding-right: 2em;
-	float: left;
-}
-
-.rml-user-avatar {
-	max-height: 36px;
-	width: 36px;
-}
-
-.rml-icon {
-	font-family: 'dripicons-v2';
+	margin-top: 76px;
+	margin-left: 93px;
+	float: right;
+	width: 100%;
+	display: inline-block;
+	position: fixed;
 }

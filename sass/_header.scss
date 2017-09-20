@@ -1,0 +1,39 @@
+.rml-header {
+	border-bottom: 4px solid black;
+	height: 76px;	
+	padding-right: 0;
+	background-color: #ffffff;	
+	.rml-user-avatar {
+		max-height: 32px;
+		width: 32px;
+	}
+	.rml-icon {
+		font-family: 'dripicons-v2';
+		color: $brand-main;
+		font-size: 1.5em;
+		border-left: 2px solid $neutral-light;
+		padding-left: 0.8em;
+		padding-right: 0.8em;
+	}
+	.rml-icon:hover {
+		color: $brand-dark;
+		cursor: pointer;
+	}
+	.rml-user-menu {
+		text-align: right;
+	}
+	.logo {
+		height: 48px;
+	}
+	img {
+		vertical-align: text-bottom;
+		margin-right: 0.8em;
+		opacity: 0.6;
+	}
+	img:hover {
+		opacity: 1;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+}

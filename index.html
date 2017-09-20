@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+<!--Styles-->    
     <link href="stylesheets/app.css" rel="stylesheet" type="text/css"/>
 <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -13,32 +15,61 @@
 	<link rel="manifest" href="favicons/manifest.json">
 	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#88b04b">
 	<meta name="theme-color" content="#ffffff">
-<!--/Favicon and app-->
+<!--Page Info-->
     <title>Remeli</title>
   </head>
   <body>
+<!--Header-->
   	<header>
   		<nav class="navbar fixed-top rml-header align-middle">
-			<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="text" placeholder="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-			</form>
-			<object type="image/svg+xml" data="svg/logo-main.svg" class="logo">
+  			<div class="col-md-4 float-left">
+				<form class="form-inline my-2 my-lg-0 rml-search">
+					  <label class="sr-only" for="inlineFormInputGroup">Busca</label>
+					  <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+					    <div class="input-group-addon"><span class="dripicons-search"></span></div>
+					    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Buscar">
+					  </div>
+				</form>
+			</div>
+			<object type="image/svg+xml" data="svg/logo-main.svg" class="rml-logo logo col-md-4">
 	  			Remeli <!-- fallback image in CSS -->
 			</object>
-			  <a class="float-left" href="#">
-    			<span class="rml-user-name">Lola</span>
-    			<img class="rml-user-avatar rounded float-left" src="placeholder/user-avatar.png">
-  			</a>
-		
+			<div class="rml-user-menu float-right col-md-4">
+			  	<a class="" href="#">
+    				<span class="rml-user-name">Lola</span>
+    				<img class="rml-user-avatar rounded" src="placeholder/user-avatar.png">
+  				</a>
     			<span class="rml-icon dripicons-bell"></span>
-
+    		</div>
      	</nav>
   	</header>
-  	<nav>
-  	</nav>
+<!--/Header-->
+<!--Main Navigation-->
+	<nav class="nav rml-main-nav">
+	  <a class="nav-link active" href="#">
+	  	<span class="rml-icon dripicons-cutlery"></span>
+	  	Receitas
+	  </a>
+	  <a class="nav-link" href="#">
+	  	<span class="rml-icon dripicons-calendar"></span>
+	  	Agenda
+	  </a>
+	  <a class="nav-link" href="#">
+		<span class="rml-icon dripicons-lightbulb"></span>
+	  	Inpire-se
+	  </a>
+	  <a class="nav-link" href="#">
+	  	<span class="rml-icon dripicons-to-do"></span>
+	  	Minha Lista
+	  </a>
+	</nav>
+<!--/Main Navigation-->
+<!--Content-->
   	<main>
+  		<div class="rml-image-header">
+  		</div>
   	</main>
+<!--/Content-->  	
   	<footer>
   	</footer>
   </body>

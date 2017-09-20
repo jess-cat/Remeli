@@ -1,0 +1,14 @@
+.rml-search {
+	font-family: 'europalight';
+	.input-group {
+		height: 2em;
+	}
+	.input-group-addon {
+		color: $neutral;
+		background-color: $white;
+		padding: .5rem;
+	}
+	.form-control {
+		font-size: 0.9em;
+	}
+}
