@@ -3,28 +3,12 @@ body {
 	color: $neutral-dark;
 }
 
-h1, h2, h3 {
-	color: $black;
-}
-
-h2 {
-	color: $brand-main;
-}
-
 .rml-header {
+	display: inline-block;
 	height: 76px;
 	border-bottom: 4px solid black;
-	min-width: 100%;
-	position: fixed;
-	z-index: 3;
-	text-align: center;
 	background-color: #ffffff;
 	padding: 0.5em;
-	h1 {
-		span {
-			display: none;
-		}
-	}
 	.logo {
 		height: 56px;
 	}
@@ -36,4 +20,13 @@ main {
 	padding-left: 2em;
 	padding-right: 2em;
 	float: left;
+}
+
+.rml-user-avatar {
+	max-height: 36px;
+	width: 36px;
+}
+
+.rml-icon {
+	font-family: 'dripicons-v2';
 }
