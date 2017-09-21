@@ -19,16 +19,35 @@ p {
 }
 .rml-sub-nav-font {
 	a {
-	font-family: $brand-font-bold;
-	color: $neutral-light;
-	font-size: 0.8em;
-	line-height: 1em;	
+		text-transform: uppercase;		
+		font-family: $brand-font-bold;
+		color: $neutral-light;
+		font-size: 0.8em;
+		line-height: 1em;
+	}
+	a:active, a.active {
+		font-family: $brand-font-bold;
+		background-color: $white;
+		border-bottom: 2px solid $neutral-light;
+		color: $brand-main;
 	}
 	a:hover {
 		color: $brand-dark;
 	}
-	.active {
+}
+.rml-sub-nav2-font {
+	a {
 		font-family: $brand-font-bold;
-		color: $brand-main;
+		color: $neutral;
+		font-size: 0.8em;
+		line-height: 1em;
+	}
+	a:active, a.active {
+		font-family: $brand-font-bold;
+		font-size: 1em;
+		color: $black;
+	}
+	a:hover {
+		color: $brand-dark;
 	}
 }

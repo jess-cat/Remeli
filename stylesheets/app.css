@@ -1115,19 +1115,40 @@ p {
 
 /* line 21, ../sass/_typography.scss */
 .rml-sub-nav-font a {
+  text-transform: uppercase;
   font-family: "europabold", "helvetica", sans-serif;
   color: #d4d3d3;
   font-size: 0.8em;
   line-height: 1em;
 }
-/* line 27, ../sass/_typography.scss */
+/* line 28, ../sass/_typography.scss */
+.rml-sub-nav-font a:active, .rml-sub-nav-font a.active {
+  font-family: "europabold", "helvetica", sans-serif;
+  background-color: white;
+  border-bottom: 2px solid #d4d3d3;
+  color: #84BD00;
+}
+/* line 34, ../sass/_typography.scss */
 .rml-sub-nav-font a:hover {
   color: #649135;
 }
-/* line 30, ../sass/_typography.scss */
-.rml-sub-nav-font .active {
+
+/* line 39, ../sass/_typography.scss */
+.rml-sub-nav2-font a {
   font-family: "europabold", "helvetica", sans-serif;
-  color: #84BD00;
+  color: #A1A3A3;
+  font-size: 0.8em;
+  line-height: 1em;
+}
+/* line 45, ../sass/_typography.scss */
+.rml-sub-nav2-font a:active, .rml-sub-nav2-font a.active {
+  font-family: "europabold", "helvetica", sans-serif;
+  font-size: 1em;
+  color: black;
+}
+/* line 50, ../sass/_typography.scss */
+.rml-sub-nav2-font a:hover {
+  color: #649135;
 }
 
 /* line 1, ../sass/_header.scss */
@@ -1327,7 +1348,6 @@ main .container-fluid {
 }
 /* line 46, ../sass/_elements.scss */
 .rml-sub-nav a {
-  text-transform: uppercase;
   max-height: 30px;
 }
 /* line 50, ../sass/_elements.scss */
@@ -1340,11 +1360,24 @@ main .container-fluid {
 }
 /* line 56, ../sass/_elements.scss */
 .rml-sub-nav a:active, .rml-sub-nav a.active {
-  font-family: "europabold", "helvetica", sans-serif;
   background-color: white;
   border-bottom: 2px solid #d4d3d3;
 }
-/* line 60, ../sass/_elements.scss */
-.rml-sub-nav a:active p, .rml-sub-nav a.active p {
-  color: #84BD00;
+
+/* line 61, ../sass/_elements.scss */
+.rml-sub-nav2 {
+  padding-top: 30px;
+  vertical-align: bottom;
+  float: left;
+  border-bottom: 2px solid #84BD00;
+}
+/* line 69, ../sass/_elements.scss */
+.rml-sub-nav2 a:first-child span {
+  text-align: left;
+  float: left;
+}
+/* line 75, ../sass/_elements.scss */
+.rml-sub-nav2 a:last-child span {
+  text-align: right;
+  float: right;
 }

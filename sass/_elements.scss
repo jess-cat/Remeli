@@ -44,7 +44,7 @@
 	border: 2px solid $white;
 	border-top: none;
 	a {
-		text-transform: uppercase;
+
 		max-height: 30px;
 	}
 	a:first-child {
@@ -54,11 +54,29 @@
 		border-left: 2px solid $white;
 	}
 	a:active, a.active {
-		font-family: $brand-font-bold;
 		background-color: $white;
 		border-bottom: 2px solid $neutral-light;
-		p {
-			color: $brand-main;
+	}
+}
+.rml-sub-nav2 {
+	padding-top: 30px;
+	vertical-align: bottom;
+	float: left;
+	border-bottom: 2px solid $brand-main;
+	a {
+	}
+	a:first-child {
+		span {
+			text-align: left;
+			float: left;
 		}
 	}
+	a:last-child {
+		span {
+			text-align: right;
+			float: right;
+		}		
+	}
+	a:active, a.active {
+	}	
 }
