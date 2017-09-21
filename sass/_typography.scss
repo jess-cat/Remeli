@@ -9,6 +9,14 @@ h1 {
 h2 {
 	color: $brand-main;
 }
+h3 {
+	color: $neutral-light;
+	font-family: $brand-font-bold;
+	font-size: 1em;
+}
+h3.current {
+	color: $black;
+}
 .rml-user-name {
 	font-family: $brand-font;
 	color: $neutral;
@@ -50,4 +58,14 @@ p {
 	a:hover {
 		color: $brand-dark;
 	}
+}
+.rml-meal-unit {
+	color: $neutral-light;
+	font-family: $brand-font-light;
+	font-size: 0.8em;
+	line-height: 36px;
+}
+.rml-meal-unit.current {
+	color: $black;
+	font-family: $brand-font;
 }

@@ -1102,18 +1102,30 @@ h2 {
 }
 
 /* line 12, ../sass/_typography.scss */
+h3 {
+  color: #d4d3d3;
+  font-family: "europabold", "helvetica", sans-serif;
+  font-size: 1em;
+}
+
+/* line 17, ../sass/_typography.scss */
+h3.current {
+  color: black;
+}
+
+/* line 20, ../sass/_typography.scss */
 .rml-user-name {
   font-family: "europaregular", "helvetica", sans-serif;
   color: #A1A3A3;
 }
 
-/* line 16, ../sass/_typography.scss */
+/* line 24, ../sass/_typography.scss */
 p {
   font-family: "europaregular", "helvetica", sans-serif;
   color: #A1A3A3;
 }
 
-/* line 21, ../sass/_typography.scss */
+/* line 29, ../sass/_typography.scss */
 .rml-sub-nav-font a {
   text-transform: uppercase;
   font-family: "europabold", "helvetica", sans-serif;
@@ -1121,34 +1133,48 @@ p {
   font-size: 0.8em;
   line-height: 1em;
 }
-/* line 28, ../sass/_typography.scss */
+/* line 36, ../sass/_typography.scss */
 .rml-sub-nav-font a:active, .rml-sub-nav-font a.active {
   font-family: "europabold", "helvetica", sans-serif;
   background-color: white;
   border-bottom: 2px solid #d4d3d3;
   color: #84BD00;
 }
-/* line 34, ../sass/_typography.scss */
+/* line 42, ../sass/_typography.scss */
 .rml-sub-nav-font a:hover {
   color: #649135;
 }
 
-/* line 39, ../sass/_typography.scss */
+/* line 47, ../sass/_typography.scss */
 .rml-sub-nav2-font a {
   font-family: "europabold", "helvetica", sans-serif;
   color: #A1A3A3;
   font-size: 0.8em;
   line-height: 1em;
 }
-/* line 45, ../sass/_typography.scss */
+/* line 53, ../sass/_typography.scss */
 .rml-sub-nav2-font a:active, .rml-sub-nav2-font a.active {
   font-family: "europabold", "helvetica", sans-serif;
   font-size: 1em;
   color: black;
 }
-/* line 50, ../sass/_typography.scss */
+/* line 58, ../sass/_typography.scss */
 .rml-sub-nav2-font a:hover {
   color: #649135;
+}
+
+/* line 62, ../sass/_typography.scss */
+.rml-meal-unit {
+  color: #d4d3d3;
+  font-family: "europalight", "helvetica", sans-serif;
+  font-size: 0.8em;
+  line-height: 36px;
+}
+
+/* line 68, ../sass/_typography.scss */
+.rml-meal-unit.current {
+  color: black;
+  font-family: "europaregular", "helvetica", sans-serif;
 }
 
 /* line 1, ../sass/_header.scss */
@@ -1292,13 +1318,48 @@ main .container-fluid {
   float: left;
 }
 
-/* line 8, ../sass/_elements.scss */
+/* line 7, ../sass/_elements.scss */
+.rml-social {
+  margin-right: 0;
+  float: right;
+  width: 50px;
+  height: 93px;
+}
+/* line 12, ../sass/_elements.scss */
+.rml-social a {
+  height: 30px;
+  width: 100%;
+  min-width: 100%;
+  margin-bottom: 12px;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+/* line 19, ../sass/_elements.scss */
+.rml-social a:first-child {
+  margin-top: 20px;
+}
+/* line 22, ../sass/_elements.scss */
+.rml-social a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  -moz-box-shadow: rgba(150, 150, 150, 0.4) 0px 3px 3px;
+  -webkit-box-shadow: rgba(150, 150, 150, 0.4) 0px 3px 3px;
+  box-shadow: rgba(150, 150, 150, 0.4) 0px 3px 3px;
+}
+/* line 26, ../sass/_elements.scss */
+.rml-social object {
+  height: 26px;
+}
+/* line 33, ../sass/_elements.scss */
+.rml-social object.rml-social-facebook svg#Layer_1 g path {
+  fill: blue;
+}
+
+/* line 40, ../sass/_elements.scss */
 .rml-user-avatar {
   width: 56px;
   opacity: .8;
 }
 
-/* line 12, ../sass/_elements.scss */
+/* line 44, ../sass/_elements.scss */
 .rml-user-avatar:hover {
   -moz-box-shadow: rgba(150, 150, 150, 0.4) 0px 6px 6px;
   -webkit-box-shadow: rgba(150, 150, 150, 0.4) 0px 6px 6px;
@@ -1306,38 +1367,38 @@ main .container-fluid {
   opacity: 1;
 }
 
-/* line 16, ../sass/_elements.scss */
+/* line 48, ../sass/_elements.scss */
 .rml-menu-header {
   height: 93px;
 }
-/* line 18, ../sass/_elements.scss */
+/* line 50, ../sass/_elements.scss */
 .rml-menu-header img {
   margin: 1em;
 }
-/* line 21, ../sass/_elements.scss */
+/* line 53, ../sass/_elements.scss */
 .rml-menu-header h1 {
   padding-top: 1rem;
   padding-bottom: 0;
   margin-bottom: 0;
 }
-/* line 26, ../sass/_elements.scss */
+/* line 58, ../sass/_elements.scss */
 .rml-menu-header p {
   padding-bottom: 0.2rem;
 }
 
-/* line 30, ../sass/_elements.scss */
+/* line 62, ../sass/_elements.scss */
 .rml-ratings {
   display: inline-flex;
   color: #d4d3d3;
 }
-/* line 33, ../sass/_elements.scss */
+/* line 65, ../sass/_elements.scss */
 .rml-ratings p {
   font-size: 0.8em;
   text-align: right;
   margin-right: 2em;
 }
 
-/* line 39, ../sass/_elements.scss */
+/* line 71, ../sass/_elements.scss */
 .rml-sub-nav {
   background-color: #F7F7F7;
   height: 30px;
@@ -1346,38 +1407,76 @@ main .container-fluid {
   border: 2px solid white;
   border-top: none;
 }
-/* line 46, ../sass/_elements.scss */
+/* line 78, ../sass/_elements.scss */
 .rml-sub-nav a {
   max-height: 30px;
 }
-/* line 50, ../sass/_elements.scss */
+/* line 82, ../sass/_elements.scss */
 .rml-sub-nav a:first-child {
   border-right: 2px solid white;
 }
-/* line 53, ../sass/_elements.scss */
+/* line 85, ../sass/_elements.scss */
 .rml-sub-nav a:last-child {
   border-left: 2px solid white;
 }
-/* line 56, ../sass/_elements.scss */
+/* line 88, ../sass/_elements.scss */
 .rml-sub-nav a:active, .rml-sub-nav a.active {
   background-color: white;
   border-bottom: 2px solid #d4d3d3;
 }
 
-/* line 61, ../sass/_elements.scss */
+/* line 93, ../sass/_elements.scss */
 .rml-sub-nav2 {
   padding-top: 30px;
   vertical-align: bottom;
   float: left;
   border-bottom: 2px solid #84BD00;
 }
-/* line 69, ../sass/_elements.scss */
+/* line 101, ../sass/_elements.scss */
 .rml-sub-nav2 a:first-child span {
   text-align: left;
   float: left;
 }
-/* line 75, ../sass/_elements.scss */
+/* line 107, ../sass/_elements.scss */
 .rml-sub-nav2 a:last-child span {
   text-align: right;
   float: right;
+}
+
+/* line 115, ../sass/_elements.scss */
+.rml-day-meal {
+  float: left;
+  padding-top: 40px;
+}
+/* line 118, ../sass/_elements.scss */
+.rml-day-meal h3 {
+  padding-bottom: .2em;
+  width: 100%;
+  min-width: 100%;
+  border-bottom: 2px solid #d4d3d3;
+}
+/* line 124, ../sass/_elements.scss */
+.rml-day-meal h3.current {
+  border-bottom: 3px solid black;
+  padding-bottom: .5em;
+}
+
+/* line 129, ../sass/_elements.scss */
+.rml-meal-unit {
+  width: 100%;
+  border-bottom: 1px solid #d4d3d3;
+}
+
+/* line 133, ../sass/_elements.scss */
+.rml-meal-unit:hover {
+  color: #649135;
+  background-color: #E3EAA5;
+  cursor: pointer;
+}
+
+/* line 138, ../sass/_elements.scss */
+.rml-meal-thumb {
+  background-color: #d4d3d3;
+  width: 36px;
+  height: 36px;
 }

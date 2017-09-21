@@ -4,7 +4,39 @@
 	background-color: $brand-main;
 	float: left;
 }
+.rml-social {
+	margin-right: 0;
+	float: right;
+	width: 50px;
+	height: 93px;
+	a {
+		height: 30px; 
+		width: 100%;
+		min-width: 100%;
+		margin-bottom: 12px;
+		background-color: rgba(255, 255, 255, 0.35);
+	}
+	a:first-child {
+		margin-top:20px;
+	}
+	a:hover {
+		background-color: rgba(255, 255, 255, 0.1);
+		@include box-shadow(rgba(150,150,150,0.4) 0px 3px 3px);
+	}
+	object {
+		height: 26px;
 
+	}
+	object.rml-social-facebook {
+		svg#Layer_1 {
+			g {
+				path {
+		fill: blue;
+		}
+		}
+		}
+	}
+}
 .rml-user-avatar {
 	width: 56px;
 	opacity: .8;
@@ -78,5 +110,33 @@
 		}		
 	}
 	a:active, a.active {
-	}	
+	}
+}
+.rml-day-meal {
+	float: left;
+	padding-top: 40px;
+	h3 {
+		padding-bottom: .2em;
+		width: 100%;
+		min-width: 100%;
+		border-bottom: 2px solid $neutral-light;
+	}
+	h3.current {
+		border-bottom: 3px solid $black;
+		padding-bottom: .5em;
+	}
+}
+.rml-meal-unit {
+	width: 100%;
+	border-bottom: 1px solid $neutral-light;		
+}
+.rml-meal-unit:hover {
+	color: $brand-dark;
+	background-color: $brand-light;
+	cursor: pointer;
+}
+.rml-meal-thumb {
+	background-color: $neutral-light;
+	width: 36px;
+	height: 36px;
 }
