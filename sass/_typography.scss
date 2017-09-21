@@ -1,9 +1,10 @@
 body {
 	font-family: $brand-font;
 }
-
-h1, h2, h3 {
+h1 {
 	color: $black;
+	font-family: $brand-font-bold;
+	font-size: 2rem !important;
 }
 
 h2 {
@@ -11,6 +12,10 @@ h2 {
 }
 
 .rml-user-name {
+	font-family: $brand-font;
+	color: $neutral;
+}
+p {
 	font-family: $brand-font;
 	color: $neutral;
 }
