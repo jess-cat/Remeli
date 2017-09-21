@@ -6,11 +6,9 @@ h1 {
 	font-family: $brand-font-bold;
 	font-size: 2rem !important;
 }
-
 h2 {
 	color: $brand-main;
 }
-
 .rml-user-name {
 	font-family: $brand-font;
 	color: $neutral;
@@ -18,4 +16,19 @@ h2 {
 p {
 	font-family: $brand-font;
 	color: $neutral;
+}
+.rml-sub-nav-font {
+	a {
+	font-family: $brand-font-bold;
+	color: $neutral-light;
+	font-size: 0.8em;
+	line-height: 1em;	
+	}
+	a:hover {
+		color: $brand-dark;
+	}
+	.active {
+		font-family: $brand-font-bold;
+		color: $brand-main;
+	}
 }

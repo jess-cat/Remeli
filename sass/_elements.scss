@@ -36,17 +36,29 @@
 		margin-right: 2em;
 	}
 }
-
-.rml-subnav {
-	background-color: $neutral-light;
-	height: 40px;
-	text-align: center;
-	vertical-align: middle;
-	.col-md-4 {
-		border: 1px solid $neutral;
-		border-top: none;
+.rml-sub-nav {
+	background-color: $neutral-lighter;
+	height: 30px;
+	vertical-align: bottom;
+	float: left;
+	border: 2px solid $white;
+	border-top: none;
+	a {
+		text-transform: uppercase;
+		max-height: 30px;
 	}
-	.col-md-4:hover {
-		background-color: $brand-light;
+	a:first-child {
+		border-right: 2px solid $white;
+	}
+	a:last-child {
+		border-left: 2px solid $white;
+	}
+	a:active, a.active {
+		font-family: $brand-font-bold;
+		background-color: $white;
+		border-bottom: 2px solid $neutral-light;
+		p {
+			color: $brand-main;
+		}
 	}
 }
