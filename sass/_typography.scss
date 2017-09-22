@@ -20,6 +20,10 @@ h3 {
 h3.current {
 	color: $black;
 }
+h4 {
+	color: $neutral-light;
+	font-size: 0.9rem;
+}
 .rml-user-name {
 	font-family: $brand-font;
 	color: $neutral;
@@ -68,6 +72,14 @@ p {
 	font-size: 0.8em;
 	line-height: 36px;
 }
+.selected {
+	h4 {
+		color: $black;
+	}
+	.rml-meal-unit {
+		color: $neutral-darker;
+	}
+}
 .rml-meal-unit.current {
 	color: $black;
 	font-family: $brand-font;
@@ -101,4 +113,8 @@ p {
   color: $brand-main;
   margin-top: 0;
   font-family: $brand-font-bold;
+}
+.rml-calendar-unit {
+	font-size: .7rem;
+	line-height: 1rem;
 }

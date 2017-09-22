@@ -89,6 +89,7 @@
 	vertical-align: bottom;
 	float: left;
 	border-bottom: 2px solid $brand-main;
+	margin-bottom: 30px;
 	a {
 	}
 	a:first-child {
@@ -108,7 +109,7 @@
 }
 .rml-day-meal {
 	float: left;
-	padding-top: 40px;
+	padding-top: 16px;
 	h3 {
 		padding-bottom: .2em;
 		width: 100%;
@@ -119,10 +120,26 @@
 		border-bottom: 3px solid $black;
 		padding-bottom: .5em;
 	}
+	h3 {
+		span {
+			text-align: right;
+			float:right;
+		}
+	}
+	h4 {
+		margin-top: 1.5rem;
+	}
+}
+.rml-day-meal.selected {
+	background-color: $brand-light;
 }
 .rml-meal-unit {
 	width: 100%;
-	border-bottom: 1px solid $neutral-light;		
+	border-bottom: 1px solid $neutral-light;
+	.selected {
+
+		border-bottom: 2px solid $neutral-darker;
+	}	
 }
 .rml-meal-unit:hover {
 	color: $brand-dark;
@@ -165,4 +182,13 @@
   margin-top: 0;
   float: left;
   margin-bottom: 2.5rem;
+}
+.rml-calendar-unit {
+	height: 40px;
+	padding-right: .3rem;
+	.rml-meal-thumb {
+		width: 28px;
+		height: 28px;
+		margin-top: 5px;
+	}
 }
