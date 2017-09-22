@@ -4,15 +4,18 @@ body {
 h1 {
 	color: $black;
 	font-family: $brand-font-bold;
-	font-size: 2rem !important;
+	font-size: 2rem;
 }
 h2 {
-	color: $brand-main;
+	color: $black;
+	font-size: 1.2rem;
+	padding-top: 0.5rem;
+	padding-bottom: 1rem;
 }
 h3 {
 	color: $neutral-light;
 	font-family: $brand-font-bold;
-	font-size: 1em;
+	font-size: 1rem;
 }
 h3.current {
 	color: $black;
@@ -68,4 +71,34 @@ p {
 .rml-meal-unit.current {
 	color: $black;
 	font-family: $brand-font;
+}
+.rml-ingredients {
+	label.form-check-label {
+		font-family: $brand-font-light;
+		text-align: left;
+	}
+	strong {
+		color: $black;
+		font-family: $brand-font-bold;
+		text-align: right;
+	}
+}
+.rml-preparation {
+	li {
+		color: $black;
+		font-size: 0.9rem;
+		font-family: $brand-font-light;
+		line-height: 1.2rem;
+		text-indent: 2rem;
+	}
+	li::before {
+		content: counter();
+	    color: $brand-main;
+	}
+}
+.rml-custom-counter li::before {
+  content: counter(step-counter);
+  color: $brand-main;
+  margin-top: 0;
+  font-family: $brand-font-bold;
 }

@@ -4,6 +4,9 @@
 	background-color: $brand-main;
 	float: left;
 }
+.rml-image-header.rml-recipe {
+	height: 278px;
+}
 .rml-social {
 	margin-right: 0;
 	float: right;
@@ -26,15 +29,6 @@
 	object {
 		height: 26px;
 
-	}
-	object.rml-social-facebook {
-		svg#Layer_1 {
-			g {
-				path {
-		fill: blue;
-		}
-		}
-		}
 	}
 }
 .rml-user-avatar {
@@ -139,4 +133,36 @@
 	background-color: $neutral-light;
 	width: 36px;
 	height: 36px;
+}
+.rml-ingredients {
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+}
+.rml-preparation {
+	h2 {
+		margin-top: 1rem;
+		width: 100%;
+	}
+	li {
+		margin-bottom: 1rem;
+		float: left;
+		text-align: justify;
+		display: flex;
+	}
+}
+.rml-custom-counter {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.rml-custom-counter li {
+  counter-increment: step-counter;
+}
+
+.rml-custom-counter li::before {
+  margin: 1rem;
+  margin-top: 0;
+  float: left;
+  margin-bottom: 2.5rem;
 }
