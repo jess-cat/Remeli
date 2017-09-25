@@ -33,3 +33,36 @@ nav.rml-main-nav {
 		cursor: default;
 	}
 }
+.rml-nav-top {
+	height: 93px;
+	border-bottom: 1px solid $neutral-light;
+	padding: 10px;
+	padding-top: 1rem;
+	padding-bottom: 0;
+	.col-md-5 {
+		padding-left: 2rem;
+	}
+	.col-md-5:hover {
+		background-color: $brand-lighter;
+		border-bottom: 4px solid $brand-light;
+		p {
+			color: $brand-dark;
+		}
+	}
+	.col-md-5.active {
+		height: 78px;
+		border-bottom: 4px solid $brand-main;
+	}
+	.col-md-5:first-child {
+		margin-right: 40px;
+	}
+	.col-md-5:last-child {
+		margin-left: 40px;
+	}
+	p {
+		margin-bottom: 0;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+}

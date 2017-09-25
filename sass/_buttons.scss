@@ -1,0 +1,17 @@
+.rml-dropdown {
+	margin-top: 2rem;
+	.btn {
+		width: 80%;
+		margin-left: 10%;
+		background-color: $white;
+		border: none;
+		border-radius: 0;
+		border-bottom: 1px solid $neutral-light;
+		text-align: center;
+		color: $neutral;
+	}
+	.dropdown-toggle::after {
+		float: right;
+		margin-top: .8rem;
+	}
+}

@@ -68,18 +68,32 @@
   	<main>
       <div class="container-fluid">
         <div class="row rml-nav-top no-gutters justify-content-center">
-          <div class="col-md-5 float-left active">
+          <div class="col-md-5 float-left">
             <a href="./menus.html"><h1>Menus Salvos</h1>
             <p>Menus que você gostaria de provar.</p></a>
           </div>
-          <div class="col-md-5 float-right">
+          <div class="col-md-5 float-right active">
             <a href="./menus-past.html"><h1>Menus Testados</h1>
             <p>Menus que você já provou.</p></a>
           </div>
         </div>
       </div>
       <div class="row no-gutters justify-content-center">
-<!--Menu Unit-->
+		<div class="col-md-8 dropdown rml-dropdown">
+		  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    Filtrar
+		  </button>
+		  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		    <a class="dropdown-item" href="#">Todos os menus</a>
+		    <a class="dropdown-item" href="#">5 estrelas</a>
+		    <a class="dropdown-item" href="#">4 estrelas</a>
+		    <a class="dropdown-item" href="#">3 estrelas</a>
+		    <a class="dropdown-item" href="#">2 estrelas</a>
+		    <a class="dropdown-item" href="#">1 estrelas</a>
+		    <a class="dropdown-item" href="#">Sem avaliações</a>
+		  </div>
+		</div>
+<!--Menu Unit-->		
         <div class="media col-md-5">
           <div class="row no-gutters media-body rml-menu-unit">
             <div class="col-md-12 rml-unit-header">
@@ -555,5 +569,8 @@
 <!--/Content-->
   	<footer>
   	</footer>
+  	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
 </html>

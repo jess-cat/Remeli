@@ -1,0 +1,39 @@
+.media {
+	border: 1px solid $neutral-light;
+	margin-top: 2rem;
+	margin-right: 1rem;
+	margin-left: 1rem;
+	.rml-social {
+		width: 100%;
+		margin-top: 153px;
+		bottom: 0;
+		a {
+			margin-right: .5rem;
+			margin-left: .5rem;
+			margin-left: 0;
+			text-align: center;
+			max-width: 30%;
+			min-width: 30%;
+			margin-bottom: 0;
+			height: 30px;
+		}
+		a:first-child {
+			margin-top: 0;
+		}
+	}
+}
+.rml-menu-unit {
+	.rml-user-avatar {
+		width: 32px;
+		margin-top: 1rem;
+		margin-left: 1rem;
+	}
+	.rml-ratings {
+		padding-left: 1rem;
+		padding-top: .5rem;
+	}
+}
+.rml-unit-header {
+	padding-top: .5rem;
+	border-bottom: 1px solid $neutral-light;
+}

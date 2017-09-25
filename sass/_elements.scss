@@ -28,7 +28,6 @@
 	}
 	object {
 		height: 26px;
-
 	}
 }
 .rml-user-avatar {
@@ -55,12 +54,7 @@
 }
 .rml-ratings {
 	display: inline-flex;
-	color: $neutral-light;
-	p {
-		font-size: 0.8em;
-		text-align: right;
-		margin-right: 2em;
-	}
+	text-align: right;
 }
 .rml-sub-nav {
 	background-color: $neutral-lighter;
@@ -70,7 +64,6 @@
 	border: 2px solid $white;
 	border-top: none;
 	a {
-
 		max-height: 30px;
 	}
 	a:first-child {
@@ -131,13 +124,12 @@
 	}
 }
 .rml-day-meal.selected {
-	background-color: $brand-light;
+	background-color: $brand-lighter;
 }
 .rml-meal-unit {
 	width: 100%;
 	border-bottom: 1px solid $neutral-light;
 	.selected {
-
 		border-bottom: 2px solid $neutral-darker;
 	}	
 }
@@ -172,11 +164,9 @@
   padding: 0;
   list-style-type: none;
 }
-
 .rml-custom-counter li {
   counter-increment: step-counter;
 }
-
 .rml-custom-counter li::before {
   margin: 1rem;
   margin-top: 0;

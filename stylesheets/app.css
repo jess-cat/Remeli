@@ -1069,17 +1069,17 @@
   content: "\e069";
 }
 
-/* line 23, ../sass/_colors.scss */
+/* line 24, ../sass/_colors.scss */
 .rml-primary-text-color {
   color: #A1A3A3;
 }
 
-/* line 24, ../sass/_colors.scss */
+/* line 25, ../sass/_colors.scss */
 .rml-secondary-text-color {
   color: #67686A;
 }
 
-/* line 27, ../sass/_colors.scss */
+/* line 28, ../sass/_colors.scss */
 .rml-divider-color {
   color: #d4d3d3;
 }
@@ -1101,40 +1101,68 @@ h2 {
   color: black;
   font-size: 1.2rem;
   padding-top: 0.5rem;
-  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+/* line 14, ../sass/_typography.scss */
+h2 .rml-icon {
+  color: #84BD00;
+  padding-right: 1rem;
 }
 
-/* line 15, ../sass/_typography.scss */
+/* line 19, ../sass/_typography.scss */
 h3 {
   color: #d4d3d3;
   font-family: "europabold", "helvetica", sans-serif;
   font-size: 1rem;
 }
 
-/* line 20, ../sass/_typography.scss */
+/* line 24, ../sass/_typography.scss */
 h3.current {
   color: black;
 }
 
-/* line 23, ../sass/_typography.scss */
+/* line 27, ../sass/_typography.scss */
 h4 {
   color: #d4d3d3;
   font-size: 0.9rem;
-}
-
-/* line 27, ../sass/_typography.scss */
-.rml-user-name {
-  font-family: "europaregular", "helvetica", sans-serif;
-  color: #A1A3A3;
 }
 
 /* line 31, ../sass/_typography.scss */
 p {
   font-family: "europaregular", "helvetica", sans-serif;
   color: #A1A3A3;
+  padding-bottom: .5rem;
+  margin-bottom: 0;
 }
 
-/* line 36, ../sass/_typography.scss */
+/* line 38, ../sass/_typography.scss */
+.rml-user-name {
+  font-family: "europaregular", "helvetica", sans-serif;
+  color: #A1A3A3;
+}
+
+/* line 42, ../sass/_typography.scss */
+.rml-ratings-font {
+  font-size: 0.8em;
+  margin-right: 2em;
+}
+
+/* line 46, ../sass/_typography.scss */
+.rml-author-font {
+  font-size: .8rem;
+}
+
+/* line 49, ../sass/_typography.scss */
+.rml-description-font {
+  font-family: "europalight", "helvetica", sans-serif;
+  color: black;
+  font-style: italic;
+  font-size: 0.8rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+/* line 58, ../sass/_typography.scss */
 .rml-sub-nav-font a {
   text-transform: uppercase;
   font-family: "europabold", "helvetica", sans-serif;
@@ -1142,37 +1170,37 @@ p {
   font-size: 0.8em;
   line-height: 1em;
 }
-/* line 43, ../sass/_typography.scss */
+/* line 65, ../sass/_typography.scss */
 .rml-sub-nav-font a:active, .rml-sub-nav-font a.active {
   font-family: "europabold", "helvetica", sans-serif;
   background-color: white;
   border-bottom: 2px solid #d4d3d3;
   color: #84BD00;
 }
-/* line 49, ../sass/_typography.scss */
+/* line 71, ../sass/_typography.scss */
 .rml-sub-nav-font a:hover {
   color: #649135;
 }
 
-/* line 54, ../sass/_typography.scss */
+/* line 76, ../sass/_typography.scss */
 .rml-sub-nav2-font a {
   font-family: "europabold", "helvetica", sans-serif;
   color: #A1A3A3;
   font-size: 0.8em;
   line-height: 1em;
 }
-/* line 60, ../sass/_typography.scss */
+/* line 82, ../sass/_typography.scss */
 .rml-sub-nav2-font a:active, .rml-sub-nav2-font a.active {
   font-family: "europabold", "helvetica", sans-serif;
   font-size: 1em;
   color: black;
 }
-/* line 65, ../sass/_typography.scss */
+/* line 87, ../sass/_typography.scss */
 .rml-sub-nav2-font a:hover {
   color: #649135;
 }
 
-/* line 69, ../sass/_typography.scss */
+/* line 91, ../sass/_typography.scss */
 .rml-meal-unit {
   color: #d4d3d3;
   font-family: "europalight", "helvetica", sans-serif;
@@ -1180,34 +1208,34 @@ p {
   line-height: 36px;
 }
 
-/* line 76, ../sass/_typography.scss */
+/* line 98, ../sass/_typography.scss */
 .selected h4 {
   color: black;
 }
-/* line 79, ../sass/_typography.scss */
+/* line 101, ../sass/_typography.scss */
 .selected .rml-meal-unit {
   color: #67686A;
 }
 
-/* line 83, ../sass/_typography.scss */
+/* line 105, ../sass/_typography.scss */
 .rml-meal-unit.current {
   color: black;
   font-family: "europaregular", "helvetica", sans-serif;
 }
 
-/* line 88, ../sass/_typography.scss */
+/* line 110, ../sass/_typography.scss */
 .rml-ingredients label.form-check-label {
   font-family: "europalight", "helvetica", sans-serif;
   text-align: left;
 }
-/* line 92, ../sass/_typography.scss */
+/* line 114, ../sass/_typography.scss */
 .rml-ingredients strong {
   color: black;
   font-family: "europabold", "helvetica", sans-serif;
   text-align: right;
 }
 
-/* line 99, ../sass/_typography.scss */
+/* line 121, ../sass/_typography.scss */
 .rml-preparation li {
   color: black;
   font-size: 0.9rem;
@@ -1215,13 +1243,13 @@ p {
   line-height: 1.2rem;
   text-indent: 2rem;
 }
-/* line 106, ../sass/_typography.scss */
+/* line 128, ../sass/_typography.scss */
 .rml-preparation li::before {
   content: counter();
   color: #84BD00;
 }
 
-/* line 111, ../sass/_typography.scss */
+/* line 133, ../sass/_typography.scss */
 .rml-custom-counter li::before {
   content: counter(step-counter);
   color: #84BD00;
@@ -1229,7 +1257,7 @@ p {
   font-family: "europabold", "helvetica", sans-serif;
 }
 
-/* line 117, ../sass/_typography.scss */
+/* line 139, ../sass/_typography.scss */
 .rml-calendar-unit {
   font-size: .7rem;
   line-height: 1rem;
@@ -1327,6 +1355,49 @@ nav.rml-main-nav {
   cursor: default;
 }
 
+/* line 36, ../sass/_main-nav.scss */
+.rml-nav-top {
+  height: 93px;
+  border-bottom: 1px solid #d4d3d3;
+  padding: 10px;
+  padding-top: 1rem;
+  padding-bottom: 0;
+}
+/* line 42, ../sass/_main-nav.scss */
+.rml-nav-top .col-md-5 {
+  padding-left: 2rem;
+}
+/* line 45, ../sass/_main-nav.scss */
+.rml-nav-top .col-md-5:hover {
+  background-color: #f2f5dc;
+  border-bottom: 4px solid #E3EAA5;
+}
+/* line 48, ../sass/_main-nav.scss */
+.rml-nav-top .col-md-5:hover p {
+  color: #649135;
+}
+/* line 52, ../sass/_main-nav.scss */
+.rml-nav-top .col-md-5.active {
+  height: 78px;
+  border-bottom: 4px solid #84BD00;
+}
+/* line 56, ../sass/_main-nav.scss */
+.rml-nav-top .col-md-5:first-child {
+  margin-right: 40px;
+}
+/* line 59, ../sass/_main-nav.scss */
+.rml-nav-top .col-md-5:last-child {
+  margin-left: 40px;
+}
+/* line 62, ../sass/_main-nav.scss */
+.rml-nav-top p {
+  margin-bottom: 0;
+}
+/* line 65, ../sass/_main-nav.scss */
+.rml-nav-top a:hover {
+  text-decoration: none;
+}
+
 /* line 1, ../sass/_common.scss */
 body {
   font-family: "europaregular", "helvetica", sans-serif, serif;
@@ -1347,6 +1418,27 @@ main {
 main .container-fluid {
   padding-right: 0;
   padding-left: 0;
+}
+
+/* line 1, ../sass/_buttons.scss */
+.rml-dropdown {
+  margin-top: 2rem;
+}
+/* line 3, ../sass/_buttons.scss */
+.rml-dropdown .btn {
+  width: 80%;
+  margin-left: 10%;
+  background-color: white;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #d4d3d3;
+  text-align: center;
+  color: #A1A3A3;
+}
+/* line 13, ../sass/_buttons.scss */
+.rml-dropdown .dropdown-toggle::after {
+  float: right;
+  margin-top: .8rem;
 }
 
 /* line 1, ../sass/_forms.scss */
@@ -1412,13 +1504,13 @@ main .container-fluid {
   height: 26px;
 }
 
-/* line 34, ../sass/_elements.scss */
+/* line 33, ../sass/_elements.scss */
 .rml-user-avatar {
   width: 56px;
   opacity: .8;
 }
 
-/* line 38, ../sass/_elements.scss */
+/* line 37, ../sass/_elements.scss */
 .rml-user-avatar:hover {
   -moz-box-shadow: rgba(150, 150, 150, 0.4) 0px 6px 6px;
   -webkit-box-shadow: rgba(150, 150, 150, 0.4) 0px 6px 6px;
@@ -1426,38 +1518,32 @@ main .container-fluid {
   opacity: 1;
 }
 
-/* line 42, ../sass/_elements.scss */
+/* line 41, ../sass/_elements.scss */
 .rml-menu-header {
   height: 93px;
 }
-/* line 44, ../sass/_elements.scss */
+/* line 43, ../sass/_elements.scss */
 .rml-menu-header img {
   margin: 1em;
 }
-/* line 47, ../sass/_elements.scss */
+/* line 46, ../sass/_elements.scss */
 .rml-menu-header h1 {
   padding-top: 1rem;
   padding-bottom: 0;
   margin-bottom: 0;
 }
-/* line 52, ../sass/_elements.scss */
+/* line 51, ../sass/_elements.scss */
 .rml-menu-header p {
   padding-bottom: 0.2rem;
 }
 
-/* line 56, ../sass/_elements.scss */
+/* line 55, ../sass/_elements.scss */
 .rml-ratings {
   display: inline-flex;
-  color: #d4d3d3;
-}
-/* line 59, ../sass/_elements.scss */
-.rml-ratings p {
-  font-size: 0.8em;
   text-align: right;
-  margin-right: 2em;
 }
 
-/* line 65, ../sass/_elements.scss */
+/* line 59, ../sass/_elements.scss */
 .rml-sub-nav {
   background-color: #F7F7F7;
   height: 30px;
@@ -1466,25 +1552,25 @@ main .container-fluid {
   border: 2px solid white;
   border-top: none;
 }
-/* line 72, ../sass/_elements.scss */
+/* line 66, ../sass/_elements.scss */
 .rml-sub-nav a {
   max-height: 30px;
 }
-/* line 76, ../sass/_elements.scss */
+/* line 69, ../sass/_elements.scss */
 .rml-sub-nav a:first-child {
   border-right: 2px solid white;
 }
-/* line 79, ../sass/_elements.scss */
+/* line 72, ../sass/_elements.scss */
 .rml-sub-nav a:last-child {
   border-left: 2px solid white;
 }
-/* line 82, ../sass/_elements.scss */
+/* line 75, ../sass/_elements.scss */
 .rml-sub-nav a:active, .rml-sub-nav a.active {
   background-color: white;
   border-bottom: 2px solid #d4d3d3;
 }
 
-/* line 87, ../sass/_elements.scss */
+/* line 80, ../sass/_elements.scss */
 .rml-sub-nav2 {
   padding-top: 30px;
   vertical-align: bottom;
@@ -1492,85 +1578,85 @@ main .container-fluid {
   border-bottom: 2px solid #84BD00;
   margin-bottom: 30px;
 }
-/* line 96, ../sass/_elements.scss */
+/* line 89, ../sass/_elements.scss */
 .rml-sub-nav2 a:first-child span {
   text-align: left;
   float: left;
 }
-/* line 102, ../sass/_elements.scss */
+/* line 95, ../sass/_elements.scss */
 .rml-sub-nav2 a:last-child span {
   text-align: right;
   float: right;
 }
 
-/* line 110, ../sass/_elements.scss */
+/* line 103, ../sass/_elements.scss */
 .rml-day-meal {
   float: left;
   padding-top: 16px;
 }
-/* line 113, ../sass/_elements.scss */
+/* line 106, ../sass/_elements.scss */
 .rml-day-meal h3 {
   padding-bottom: .2em;
   width: 100%;
   min-width: 100%;
   border-bottom: 2px solid #d4d3d3;
 }
-/* line 119, ../sass/_elements.scss */
+/* line 112, ../sass/_elements.scss */
 .rml-day-meal h3.current {
   border-bottom: 3px solid black;
   padding-bottom: .5em;
 }
-/* line 124, ../sass/_elements.scss */
+/* line 117, ../sass/_elements.scss */
 .rml-day-meal h3 span {
   text-align: right;
   float: right;
 }
-/* line 129, ../sass/_elements.scss */
+/* line 122, ../sass/_elements.scss */
 .rml-day-meal h4 {
   margin-top: 1.5rem;
 }
 
-/* line 133, ../sass/_elements.scss */
+/* line 126, ../sass/_elements.scss */
 .rml-day-meal.selected {
-  background-color: #E3EAA5;
+  background-color: #f2f5dc;
 }
 
-/* line 136, ../sass/_elements.scss */
+/* line 129, ../sass/_elements.scss */
 .rml-meal-unit {
   width: 100%;
   border-bottom: 1px solid #d4d3d3;
 }
-/* line 139, ../sass/_elements.scss */
+/* line 132, ../sass/_elements.scss */
 .rml-meal-unit .selected {
   border-bottom: 2px solid #67686A;
 }
 
-/* line 144, ../sass/_elements.scss */
+/* line 136, ../sass/_elements.scss */
 .rml-meal-unit:hover {
   color: #649135;
   background-color: #E3EAA5;
   cursor: pointer;
 }
 
-/* line 149, ../sass/_elements.scss */
+/* line 141, ../sass/_elements.scss */
 .rml-meal-thumb {
   background-color: #d4d3d3;
   width: 36px;
   height: 36px;
 }
 
-/* line 154, ../sass/_elements.scss */
+/* line 146, ../sass/_elements.scss */
 .rml-ingredients {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
 
-/* line 159, ../sass/_elements.scss */
+/* line 151, ../sass/_elements.scss */
 .rml-preparation h2 {
   margin-top: 1rem;
   width: 100%;
 }
-/* line 163, ../sass/_elements.scss */
+/* line 155, ../sass/_elements.scss */
 .rml-preparation li {
   margin-bottom: 1rem;
   float: left;
@@ -1578,19 +1664,19 @@ main .container-fluid {
   display: flex;
 }
 
-/* line 170, ../sass/_elements.scss */
+/* line 162, ../sass/_elements.scss */
 .rml-custom-counter {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-/* line 176, ../sass/_elements.scss */
+/* line 167, ../sass/_elements.scss */
 .rml-custom-counter li {
   counter-increment: step-counter;
 }
 
-/* line 180, ../sass/_elements.scss */
+/* line 170, ../sass/_elements.scss */
 .rml-custom-counter li::before {
   margin: 1rem;
   margin-top: 0;
@@ -1598,14 +1684,61 @@ main .container-fluid {
   margin-bottom: 2.5rem;
 }
 
-/* line 186, ../sass/_elements.scss */
+/* line 176, ../sass/_elements.scss */
 .rml-calendar-unit {
   height: 40px;
   padding-right: .3rem;
 }
-/* line 189, ../sass/_elements.scss */
+/* line 179, ../sass/_elements.scss */
 .rml-calendar-unit .rml-meal-thumb {
   width: 28px;
   height: 28px;
   margin-top: 5px;
+}
+
+/* line 1, ../sass/_media.scss */
+.media {
+  border: 1px solid #d4d3d3;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+/* line 6, ../sass/_media.scss */
+.media .rml-social {
+  width: 100%;
+  margin-top: 153px;
+  bottom: 0;
+}
+/* line 10, ../sass/_media.scss */
+.media .rml-social a {
+  margin-right: .5rem;
+  margin-left: .5rem;
+  margin-left: 0;
+  text-align: center;
+  max-width: 30%;
+  min-width: 30%;
+  margin-bottom: 0;
+  height: 30px;
+}
+/* line 20, ../sass/_media.scss */
+.media .rml-social a:first-child {
+  margin-top: 0;
+}
+
+/* line 26, ../sass/_media.scss */
+.rml-menu-unit .rml-user-avatar {
+  width: 32px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+/* line 31, ../sass/_media.scss */
+.rml-menu-unit .rml-ratings {
+  padding-left: 1rem;
+  padding-top: .5rem;
+}
+
+/* line 36, ../sass/_media.scss */
+.rml-unit-header {
+  padding-top: .5rem;
+  border-bottom: 1px solid #d4d3d3;
 }

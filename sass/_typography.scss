@@ -10,7 +10,11 @@ h2 {
 	color: $black;
 	font-size: 1.2rem;
 	padding-top: 0.5rem;
-	padding-bottom: 1rem;
+	margin-bottom: 0;
+	.rml-icon {
+		color: $brand-main;
+		padding-right: 1rem;
+	}
 }
 h3 {
 	color: $neutral-light;
@@ -24,17 +28,35 @@ h4 {
 	color: $neutral-light;
 	font-size: 0.9rem;
 }
+p {
+	font-family: $brand-font;
+	color: $neutral;
+	padding-bottom: .5rem;
+
+	margin-bottom: 0;
+}
 .rml-user-name {
 	font-family: $brand-font;
 	color: $neutral;
 }
-p {
-	font-family: $brand-font;
-	color: $neutral;
+.rml-ratings-font {
+	font-size: 0.8em;
+	margin-right: 2em;
+}
+.rml-author-font {
+	font-size: .8rem;
+}
+.rml-description-font {
+	font-family: $brand-font-light;
+	color: $black;
+	font-style: italic;
+	font-size: 0.8rem;
+	padding-right: 1rem;
+	padding-left: 1rem;
 }
 .rml-sub-nav-font {
 	a {
-		text-transform: uppercase;		
+		text-transform: uppercase;
 		font-family: $brand-font-bold;
 		color: $neutral-light;
 		font-size: 0.8em;
